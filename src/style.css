@@ -5,6 +5,10 @@ body {
   height: 100vh;
 }
 
+svg path {
+  fill: transparent;
+}
+
 button {
   margin-top: 50px;
   margin-left: 60px;
