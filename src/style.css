@@ -5,15 +5,26 @@ body {
   height: 100vh;
 }
 
+svg {
+  height: 200px;
+}
+
 svg path {
   fill: transparent;
 }
 
-button {
+.fa-heart {
+  font-size: 1.25rem;
+}
+
+button.btn.btn-primary {
   margin-top: 50px;
   margin-left: 60px;
   min-width: 200px;
   min-height: 50px;
+  box-shadow: 2px 3px 4px #222;
+  border-top: 1px solid lightgray;
+  border-left: 1px solid lightgray;
 }
 
 .deck {
