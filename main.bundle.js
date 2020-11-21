@@ -6444,10 +6444,13 @@ module.exports = exports;
 // Imports
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 var ___CSS_LOADER_AT_RULE_IMPORT_0___ = __webpack_require__(/*! -!../node_modules/css-loader/dist/cjs.js!bootstrap/dist/css/bootstrap.min.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.min.css");
+var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ./assets/img/flower.png */ "./src/assets/img/flower.png");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 exports.i(___CSS_LOADER_AT_RULE_IMPORT_0___);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-exports.push([module.i, "body {\n  width: 100vw;\n  height: 100vh;\n}\n\nbutton {\n  margin-top: 50px;\n  margin-left: 60px;\n  min-width: 200px;\n  min-height: 50px;\n}\n\n.deck {\n  position: relative;\n}\n\n.card-stack {\n  width: 100%;\n  height: 100%;\n  background: red url(\"/flower.png\");\n  border: 1px solid lightgray;\n  filter: saturate(50) drop-shadow(2px 2px 1px #222);\n  background-blend-mode: screen;\n}\n\n.card-stack {\n  position: absolute;\n}\n.card-stack.top {\n  background: transparent;\n  perspective: 1000px;\n}\n\n.card-stack:first-of-type {\n  z-index: 10;\n  bottom: -3px;\n  right: -3px;\n}\n.card-stack:nth-of-type(2) {\n  z-index: -2;\n  bottom: -6px;\n  right: -6px;\n}\n.card-stack:nth-of-type(3) {\n  z-index: -3;\n  bottom: -9px;\n  right: -9px;\n}\n.card-stack:nth-of-type(4) {\n  z-index: -5;\n  bottom: -12px;\n  right: -12px;\n}\n\n.card {\n  height: 400px;\n  width: 250px;\n  font-size: 60px;\n}\n\n.card::before,\n.card::after,\n.flip-card-back::before,\n.flip-card-back::after {\n  position: absolute;\n  font-size: 40px;\n}\n\n.spade,\n.club,\n.joker {\n  color: black;\n}\n.heart,\n.diamond {\n  color: red;\n}\n\n.joker::before,\n.joker::after {\n  content: \"\\01F0DF\";\n}\n.heart::before,\n.heart::after {\n  content: \"\\2665\";\n}\n\n.diamond::before,\n.diamond::after {\n  content: \"\\2666\";\n}\n\n.spade::before,\n.spade::after {\n  content: \"\\2660\";\n}\n\n.club::before,\n.club::after {\n  content: \"\\2663\";\n}\n\n.card::before,\n.flip-card-back::before {\n  top: -5px;\n  left: 10px;\n}\n\n.card::after,\n.flip-card-back::after {\n  bottom: 0;\n  right: 10px;\n}\n/* Flip */\n\n/* This container is needed to position the front and back side */\n.flip-card-inner {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  text-align: center;\n  transition: transform 0.5s;\n  transform-style: preserve-3d;\n}\n\n.card.top.flipped .flip-card-inner {\n  animation-name: move;\n  animation-duration: 0.8s;\n}\n\n@keyframes move {\n  0% {\n    transform: translateX(0) translateY(0);\n  }\n  100% {\n    transform: rotateY(180deg) translateX(-294px) translateY(-5px);\n  }\n}\n\n.flip-card-front,\n.flip-card-back {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  -webkit-backface-visibility: hidden; /* Safari */\n  backface-visibility: hidden;\n}\n\n.flip-card-front {\n  background: red url(\"/flower.png\");\n  border: 1px solid lightgray;\n  background-blend-mode: screen;\n}\n\n.flip-card-back {\n  background-color: white;\n  transform: rotateY(180deg);\n}\n", ""]);
+exports.push([module.i, "body {\n  width: 100vw;\n  height: 100vh;\n}\n\nbutton {\n  margin-top: 50px;\n  margin-left: 60px;\n  min-width: 200px;\n  min-height: 50px;\n}\n\n.deck {\n  position: relative;\n}\n\n.card-stack {\n  width: 100%;\n  height: 100%;\n  background: red url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  border: 1px solid lightgray;\n  filter: saturate(50) drop-shadow(2px 2px 1px #222);\n  background-blend-mode: screen;\n}\n\n.card-stack {\n  position: absolute;\n}\n.card-stack.top {\n  background: transparent;\n  perspective: 1000px;\n}\n\n.card-stack:first-of-type {\n  z-index: 10;\n  bottom: -3px;\n  right: -3px;\n}\n.card-stack:nth-of-type(2) {\n  z-index: -2;\n  bottom: -6px;\n  right: -6px;\n}\n.card-stack:nth-of-type(3) {\n  z-index: -3;\n  bottom: -9px;\n  right: -9px;\n}\n.card-stack:nth-of-type(4) {\n  z-index: -5;\n  bottom: -12px;\n  right: -12px;\n}\n\n.card {\n  height: 400px;\n  width: 250px;\n  font-size: 60px;\n}\n\n.card::before,\n.card::after,\n.flip-card-back::before,\n.flip-card-back::after {\n  position: absolute;\n  font-size: 40px;\n}\n\n.spade,\n.club,\n.joker {\n  color: black;\n}\n.heart,\n.diamond {\n  color: red;\n}\n\n.joker::before,\n.joker::after {\n  content: \"\\01F0DF\";\n}\n.heart::before,\n.heart::after {\n  content: \"\\2665\";\n}\n\n.diamond::before,\n.diamond::after {\n  content: \"\\2666\";\n}\n\n.spade::before,\n.spade::after {\n  content: \"\\2660\";\n}\n\n.club::before,\n.club::after {\n  content: \"\\2663\";\n}\n\n.card::before,\n.flip-card-back::before {\n  top: -5px;\n  left: 10px;\n}\n\n.card::after,\n.flip-card-back::after {\n  bottom: 0;\n  right: 10px;\n}\n/* Flip */\n\n/* This container is needed to position the front and back side */\n.flip-card-inner {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  text-align: center;\n  transition: transform 0.5s;\n  transform-style: preserve-3d;\n}\n\n.card.top.flipped .flip-card-inner {\n  animation-name: move;\n  animation-duration: 0.8s;\n}\n\n@keyframes move {\n  0% {\n    transform: translateX(0) translateY(0);\n  }\n  100% {\n    transform: rotateY(180deg) translateX(-294px) translateY(-5px);\n  }\n}\n\n.flip-card-front,\n.flip-card-back {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  -webkit-backface-visibility: hidden; /* Safari */\n  backface-visibility: hidden;\n}\n\n.flip-card-front {\n  background: red url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  border: 1px solid lightgray;\n  background-blend-mode: screen;\n}\n\n.flip-card-back {\n  background-color: white;\n  transform: rotateY(180deg);\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -6556,6 +6559,51 @@ function toComment(sourceMap) {
   var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
   return "/*# ".concat(data, " */");
 }
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    // eslint-disable-next-line no-param-reassign
+    options = {};
+  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign
+
+
+  url = url && url.__esModule ? url.default : url;
+
+  if (typeof url !== 'string') {
+    return url;
+  } // If url is already wrapped in quotes, remove them
+
+
+  if (/^['"].*['"]$/.test(url)) {
+    // eslint-disable-next-line no-param-reassign
+    url = url.slice(1, -1);
+  }
+
+  if (options.hash) {
+    // eslint-disable-next-line no-param-reassign
+    url += options.hash;
+  } // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+
+
+  if (/["'() \t\n]/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, '\\n'), "\"");
+  }
+
+  return url;
+};
 
 /***/ }),
 
@@ -28883,7 +28931,7 @@ module.exports = function(module) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "1677.jpg");
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "./1677.jpg");
 
 /***/ }),
 
@@ -28896,7 +28944,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "4geeks.ico");
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "./4geeks.ico");
 
 /***/ }),
 
@@ -28909,7 +28957,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "flower.png");
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "./flower.png");
 
 /***/ }),
 
