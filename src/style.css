@@ -9,12 +9,16 @@ svg {
   height: 200px;
 }
 
-svg path {
+/* svg path {
   fill: transparent;
-}
+} */
 
 .fa-heart {
   font-size: 1.25rem;
+}
+
+p.h1 {
+  font-size: 100px;
 }
 
 button.btn.btn-primary {
