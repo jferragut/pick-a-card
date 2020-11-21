@@ -5,6 +5,10 @@ body {
   height: 100vh;
 }
 
+.fixed-bottom {
+  z-index: -1;
+}
+
 .fa-heart {
   font-size: 1.25rem;
 }
